@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercice 01 - wikidata et rawgraphs</title>
+</head>
+
+<body>
+    <h1>Exercice no. 01</h1>
+    <h2>Query</h2>
+    #defaultView:BubbleChart
+    SELECT ?occupation ?image ?country ?countryLabel ?visitors_per_year WHERE {
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+    ?occupation wdt:P18 ?image;
+    wdt:P1435 wd:Q9259.
+    OPTIONAL { ?occupation wdt:P17 ?country. }
+    OPTIONAL { ?occupation wdt:P1174 ?visitors_per_year. }
+    }
+    LIMIT 100
+    <h2>Wikidata</h2>
+    <iframe style="width: 80vw; height: 50vh; border: none;"
+        src="https://query.wikidata.org/embed.html#%23defaultView%3ABubbleChart%0ASELECT%20%3Foccupation%20%3Fimage%20%3Fcountry%20%3FcountryLabel%20%3Fvisitors_per_year%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3Foccupation%20wdt%3AP18%20%3Fimage%3B%0A%20%20%20%20wdt%3AP1435%20wd%3AQ9259.%0A%20%20OPTIONAL%20%7B%20%3Foccupation%20wdt%3AP17%20%3Fcountry.%20%7D%0A%20%20OPTIONAL%20%7B%20%3Foccupation%20wdt%3AP1174%20%3Fvisitors_per_year.%20%7D%0A%7D%0ALIMIT%20100"
+        referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+
+    <h2>rawgraphs</h2>
+    <svg xmlns="http://www.w3.org/2000/svg" width="805" height="600">
+        <rect width="805" height="600" x="0" y="0" fill="#FFFFFF" id="background" />
+        <g transform="translate(402.5,300)" id="viz">
+            <path fill="#2ca02c" display="none"
+                d="M0.9999920729479248,-287.99826391118063A288,288,0,1,1,-252.8565523616183,-137.8679220406117L-127.54319672637962,-68.97632179825207A145,145,0,1,0,0.9999920729479153,-144.99655173780528Z">
+                <title />
+            </path>
+            <path fill="#1f77b4" display=""
+                d="M-251.89305265118782,-139.620521507642A288,288,0,0,1,-243.70079926376104,-153.47286547857263L-122.96046028117877,-76.84871636820395A145,145,0,0,0,-126.57969701594917,-70.72892126528234Z">
+                <title>26718</title>
+            </path>
+            <path fill="#1f77b4" display=""
+                d="M-242.62915416885687,-155.16150794351375A288,288,0,0,1,-233.5832704475144,-168.47212163157243L-117.89245507453893,-84.41782416348943A145,145,0,0,0,-121.88881518627464,-78.53735883314503Z">
+                <title>47286</title>
+            </path>
+            <path fill="#1f77b4" display=""
+                d="M-232.40770926173812,-170.09014279408262A288,288,0,0,1,-222.54389517685692,-182.80649528808354L-112.35918220765937,-91.65377337363695A145,145,0,0,0,-116.71689388876266,-86.03584532599956Z">
+                <title>82685</title>
+            </path>
+            <path fill="#1f77b4" display=""
+                d="M-221.2690573031459,-184.3475095578379A288,288,0,0,1,-210.62624082257105,-196.4194152240361L-106.38247898063376,-98.52800701290478A145,145,0,0,0,-111.0843443339484,-93.19478764339124Z">
+                <title>97462</title>
+            </path>
+            <path fill="#1f77b4" display=""
+                d="M-209.2571574635948,-197.87734092173434A288,288,0,0,1,-184.34750955783818,-221.2690573031457L-93.19478764339138,-111.08434433394828A145,145,0,0,0,-105.01339562165757,-99.985932710603Z">
+                <title>77557</title>
+            </path>
+            <path fill="#1f77b4" display=""
+                d="M-182.80649528808382,-222.54389517685672A288,288,0,0,1,-155.16150794351384,-242.62915416885681L-78.53735883314506,-121.88881518627461A145,145,0,0,0,-91.65377337363708,-112.35918220765926Z">
+                <title>100920</title>
+            </path>
+            <path fill="#1f77b4" display=""
+                d="M-153.47286547857271,-243.70079926376098A288,288,0,0,1,-123.52851665992823,-260.1628443336939L-62.64134895815598,-130.77102661026458A145,145,0,0,0,-76.848716368204,-122.96046028117875Z">
+                <title>229828</title>
+            </path>
+            <path fill="#1f77b4" display=""
+                d="M-121.71887690021856,-261.0143961664748A288,288,0,0,1,-89.94740687625658,-273.5936110296385L-45.75744758996874,-137.59090082578595A145,145,0,0,0,-60.83170919844637,-131.62257844304546Z">
+                <title>232952</title>
+            </path>
+            <path fill="#ff7f0e" display=""
+                d="M-88.04530892181536,-274.2116401192008A288,288,0,0,1,-72.59083123886518,-278.7015809428619L-37.02775157408732,-140.19253051916738A145,145,0,0,0,-43.85534963552759,-138.2089299153482Z">
+                <title>1096283</title>
+            </path>
+            <path fill="#d62728" display=""
+                d="M-70.65368027262627,-279.1989567744362A288,288,0,0,1,-54.94777275417022,-282.7096430427446L-28.151923939113566,-142.2408843424645A145,145,0,0,0,-35.09060060784847,-140.6899063507417Z">
+                <title>183835</title>
+            </path>
+            <path fill="#d62728" display=""
+                d="M-52.983213825997254,-283.0844027011532A288,288,0,0,1,-37.087860513664054,-285.6019793392878L-19.16499352174278,-143.72787837894066A145,145,0,0,0,-26.187365010940667,-142.61564400087306Z">
+                <title>702319</title>
+            </path>
+            <path fill="#d62728" display=""
+                d="M-35.10364684012493,-285.8526438193703A288,288,0,0,1,-19.0815794315422,-287.3671751025119L-10.102427630594363,-144.6476441424768A145,145,0,0,0,-17.180779848203727,-143.97854285902312Z">
+                <title>3263761</title>
+            </path>
+            <path fill="#d62728" display=""
+                d="M-17.08554179750539,-287.4927551460831A288,288,0,0,1,-0.9999920729484716,-287.99826391118063L-0.9999920729481583,-144.99655173780528A145,145,0,0,0,-8.106389996557619,-144.773224186048Z">
+                <title>3390221</title>
+            </path>
+        </g>
+        <g id="labels" transform="translate(402.5,300)" text-anchor="middle"><text
+                transform="rotate(90) translate(72.5,0) rotate(180)">
+                <tspan x="0" y="4"
+                    style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: normal; font-style: italic;" />
+            </text><text /><text transform="rotate(210.60000000000002) translate(217.5,0) rotate(180)">
+                <tspan x="0" y="4"
+                    style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;">
+                    Italy</tspan>
+            </text><text transform="rotate(214.2) translate(217.5,0) rotate(180)">
+                <tspan x="0" y="4"
+                    style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;">
+                    Italy</tspan>
+            </text><text transform="rotate(217.79999999999995) translate(217.5,0) rotate(180)">
+                <tspan x="0" y="4"
+                    style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;">
+                    Italy</tspan>
+            </text><text transform="rotate(221.39999999999998) translate(217.5,0) rotate(180)">
+                <tspan x="0" y="4"
+                    style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;">
+                    Italy</tspan>
+            </text><text transform="rotate(226.79999999999995) translate(217.5,0) rotate(180)">
+                <tspan x="0" y="4"
+                    style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;">
+                    Italy</tspan>
+            </text><text transform="rotate(234) translate(217.5,0) rotate(180)">
+                <tspan x="0" y="4"
+                    style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;">
+                    Italy</tspan>
+            </text><text transform="rotate(241.2) translate(217.5,0) rotate(180)">
+                <tspan x="0" y="4"
+                    style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;">
+                    Italy</tspan>
+            </text><text transform="rotate(248.39999999999998) translate(217.5,0) rotate(180)">
+                <tspan x="0" y="4"
+                    style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;">
+                    Italy</tspan>
+            </text><text transform="rotate(253.8) translate(217.5,0) rotate(180)">
+                <tspan x="0" y="4"
+                    style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;">
+                    Portugal</tspan>
+            </text><text transform="rotate(257.4) translate(217.5,0) rotate(180)">
+                <tspan x="0" y="4"
+                    style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;">
+                    United States of America</tspan>
+            </text><text transform="rotate(260.99999999999994) translate(217.5,0) rotate(180)">
+                <tspan x="0" y="4"
+                    style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;">
+                    United States of America</tspan>
+            </text><text transform="rotate(264.5999999999999) translate(217.5,0) rotate(180)">
+                <tspan x="0" y="4"
+                    style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;">
+                    United States of America</tspan>
+            </text><text transform="rotate(268.19999999999993) translate(217.5,0) rotate(180)">
+                <tspan x="0" y="4"
+                    style="font-family: Arial, sans-serif; font-size: 10px; fill: black; font-weight: bold;">
+                    United States of America</tspan>
+            </text></g>
+    </svg>
+</body>
+
+</html>
