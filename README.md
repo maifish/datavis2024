@@ -5,3 +5,5 @@ Préfix page : https://maifish.github.io/datavis2024/
 Page jeu de données json : https://maifish.github.io/datavis2024/projet/olympic_games.json
 
 Le nombre de compétitions par an : https://maifish.github.io/datavis2024/projet/rawgraphs.html
+
+Visualisation de couleurs : https://maifish.github.io/datavis2024/projet/Couleur.html
