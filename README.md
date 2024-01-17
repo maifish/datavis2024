@@ -3,3 +3,5 @@ Google Sheet pour mettre les bases de données : https://docs.google.com/spreads
 Préfix page : https://maifish.github.io/datavis2024/
 
 Page jeu de données json : https://maifish.github.io/datavis2024/projet/olympic_games.json
+
+Leshttps://maifish.github.io/datavis2024/projet/rawgraphs.html
