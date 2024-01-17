@@ -7,3 +7,5 @@ Page jeu de données json : https://maifish.github.io/datavis2024/projet/olympic
 Le nombre de compétitions par an : https://maifish.github.io/datavis2024/projet/rawgraphs.html
 
 Visualisation de couleurs : https://maifish.github.io/datavis2024/projet/Couleur.html
+
+Exercice 3 : https://maifish.github.io/datavis2024/projet/Exercice3_jeux_olympiques_brouillon.html
