@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Jeux Olympiques</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha384-dfLk6d+cfQ6m6p7t/lwbe6bFvHR85jN6L9q9nXzQl8rMI3/6aiZgFsd7ZhpNhvcS" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script>
+        // Initialize Bootstrap tooltips
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-cAWe2zdoUgA5nLkI7oGf9NUY7y9peGSZLRBMs/CGIpGdAe98tBvFVkNTZF+3voMcaHtVJYlZ1q5/WzXz5Z5seUA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <header>
+        <img src="images/joimage.png" alt="Right Image" style="width: 100px; height: 50px;">
+        <h1>Les Jeux Olympiques</h1>
+        <img src="images/joimage.png" alt="Right Image" style="width: 100px; height: 50px;">
+    </header>
+
+
+    <nav>
+        <ul>
+            <li><a href="#history"><img src="images/history.png" style="width: 20px; height: 20px" alt="history"></a>
+            </li>
+            <li><a href="#medal"><img src="images/medal.png" style="width: 20px; height: 20px" alt="medal"></a>
+            </li>
+            <li><a href="#paris"><img src="images/paris.png" style="width: 20px; height: 20px" alt="medal"></a></li>
+        </ul>
+    </nav>
+    <div>
+        <br>
+        <br>
+        <br>
+        <h2 id="history" class="mt-5">L'histoire des Jeux olympiques</h2>
+        <iframe style="margin: 100px; width: 80vw; height: 50vh; border: none;"
+            src="https://query.wikidata.org/embed.html#%23defaultView%3AGraph%0ASELECT%20%3FSummer_Olympic_Games%20%3FSummer_Olympic_GamesLabel%20%3Flocation%20%3FlocationLabel%20%3Fcountry%20%3FcountryLabel%20%3Flogo_image%20%3Fpoint_in_time%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3FSummer_Olympic_Games%20wdt%3AP31%20wd%3AQ159821.%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP276%20%3Flocation.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP17%20%3Fcountry.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP154%20%3Flogo_image.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP585%20%3Fpoint_in_time.%20%7D%0A%7D%0A"
+            referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+        <iframe style="margin: 100px; width: 80vw; height: 50vh; border: none;"
+            src="https://query.wikidata.org/embed.html#%23defaultView%3ATimeline%0ASELECT%20%3FSummer_Olympic_Games%20%3FSummer_Olympic_GamesLabel%20%3Flocation%20%3FlocationLabel%20%3Fcountry%20%3FcountryLabel%20%3Flogo_image%20%3Fpoint_in_time%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3FSummer_Olympic_Games%20wdt%3AP31%20wd%3AQ159821.%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP276%20%3Flocation.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP17%20%3Fcountry.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP154%20%3Flogo_image.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP585%20%3Fpoint_in_time.%20%7D%0A%7D%0A%0A"
+            referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+    </div>
+    <div>
+        <h2 class="mt-5">L'histoire des logos des Jeux olympiques</h2>
+    </div>
+    <div>
+        <h2 id="medal" class="mt-5">Qui est le meilleur athlète de JO?</h2>
+
+        <div class="athlete-card">
+            <img src="images/micheal.jpeg" alt="micheal" style="margin-left: 30px; width: 200px; height: 200px;">
+            <div class="info">
+                <h4>Michael Phelps</h2>
+                    <p>Équipe: États-Unis d’Amérique</p>
+                    <p>Sport: Natation</p>
+                    <div class="medals">
+                        <div class="gold">23</div>
+                        <div class="silver">3</div>
+                        <div class="bronze"> 2</div>
+                    </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+        <h2 class="mt-5 mb-5">Quels sont les pays les plus médaillés de l’histoire des JO d'été ?</h2>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-sm-4">
+                    <!-- Image with Tooltip -->
+                    <div class="position-relative">
+                        <img src="images/usa.png" class="img-fluid custom-image" alt="Image 1" data-toggle="tooltip"
+                            data-placement="top" title="2656 médailles (Or: 1061, Argent: 836, Bronze: 739)"
+                            style="width: 300px;">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="position-relative">
+                        <img src="images/germany.png" class="img-fluid custom-image" alt="Image 2" data-toggle="tooltip"
+                            data-placement="top" title="1130 médailles (Or: 285, Argent: 326, Bronze: 363)"
+                            style="width: 300px;">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="position-relative">
+                        <img src="images/ussr.png" class="img-fluid custom-image" alt="Image 3" data-toggle="tooltip"
+                            data-placement="top" title="1010 médailles (Or: 395, Argent: 310, Bronze: 296)"
+                            style="width: 300px;">
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="position-relative">
+                        <img src="images/grande-bretagne.jpeg" class="img-fluid custom-image" alt="Image 3"
+                            data-toggle="tooltip" data-placement="top"
+                            title="916 médailles (Or: 285, Argent: 316, Bronze: 315)" style="width: 300px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <h2 class="mt-5">Nombre de médailles gagnées par les pays</h2>
+        <iframe width="1300" height="1000" frameborder="0" scrolling="no"
+            src="https://maifish.github.io/datavis2024/projet/chartjs/"></iframe>
+    </div>
+    <div>
+        <h2 class="mt-5">Evolution au cours du temps du nombre de participants</h2>
+    </div>
+    <div>
+        <h2 id="paris" class="mt-5">JO Paris 2024</h2>
+        <iframe style='width: 471px; height: 346px;'
+            src='https://voyant-tools.org/tool/Cirrus/?categories=72effc95618d179f239cff896feeb317&stopList=keywords-08929bdc49887e0e6a898ca924cbaf6a&corpus=4938a289be07783feb0ee0c431558e70'></iframe>
+
+
+</body>
+
+</html>
