@@ -50,6 +50,9 @@ nav a {
     font-weight: bold;
 }
 
+h2 {
+    text-align: center;
+}
 
 .tooltip-inner {
     background-color: #007bff;
