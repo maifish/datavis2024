@@ -21,10 +21,11 @@ function processData(csvData) {
     for (let i = 1; i < rows.length; i++) {
         const row = rows[i].split(',');
         dataArray.push({
-            country: row[0],
-            gold: parseInt(row[1]),
-            silver: parseInt(row[2]),
-            bronze: parseInt(row[3])
+            year: row[0],
+            country: row[1],
+            gold: parseInt(row[2]),
+            silver: parseInt(row[3]),
+            bronze: parseInt(row[4])
         });
     }
 
@@ -33,36 +34,45 @@ function processData(csvData) {
 
 function drawChart(dataArray) {
     const ctx = document.getElementById('myChart').getContext('2d');
-    const countries = dataArray.map(data => data.country);
+    const years = Array.from(new Set(dataArray.map(data => data.year)));
+    const countries = Array.from(new Set(dataArray.map(data => data.country)));
+
+    const datasets = countries.map(country => {
+        return {
+            label: country,
+            data: years.map(year => {
+                const dataPoint = dataArray.find(data => data.country === country && data.year === year);
+                return dataPoint ? dataPoint.gold + dataPoint.silver + dataPoint.bronze : 0;
+            }),
+            backgroundColor: getRandomColor()
+        };
+    });
 
     const myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: countries,
-            datasets: [
-                {
-                    label: 'Gold',
-                    data: dataArray.map(data => data.gold),
-                    backgroundColor: 'gold'
-                },
-                {
-                    label: 'Silver',
-                    data: dataArray.map(data => data.silver),
-                    backgroundColor: 'silver'
-                },
-                {
-                    label: 'Bronze',
-                    data: dataArray.map(data => data.bronze),
-                    backgroundColor: 'peru'
-                }
-            ]
+            labels: years,
+            datasets: datasets
         },
         options: {
             scales: {
                 y: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    stacked: true
+                },
+                x: {
+                    stacked: true
                 }
             }
         }
     });
+}
+
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
 }
