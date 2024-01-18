@@ -2,7 +2,8 @@ Google Sheet pour mettre les bases de données : https://docs.google.com/spreads
 
 Préfix page : https://maifish.github.io/datavis2024/
 
-Page jeu de données json : https://maifish.github.io/datavis2024/projet/olympic_games.json
+Page jeu de données olympiques json : https://maifish.github.io/datavis2024/projet/olympic_games.json
+sous forme csv : https://maifish.github.io/datavis2024/projet/olympic_games.csv
 
 Le nombre de compétitions par an : https://maifish.github.io/datavis2024/projet/rawgraphs.html
 
