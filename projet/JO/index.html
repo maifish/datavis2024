@@ -59,6 +59,12 @@
         <iframe style="margin: 100px; width: 80vw; height: 50vh; border: none;"
             src="https://query.wikidata.org/embed.html#%23defaultView%3ATimeline%0ASELECT%20%3FSummer_Olympic_Games%20%3FSummer_Olympic_GamesLabel%20%3Flocation%20%3FlocationLabel%20%3Fcountry%20%3FcountryLabel%20%3Flogo_image%20%3Fpoint_in_time%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3FSummer_Olympic_Games%20wdt%3AP31%20wd%3AQ159821.%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP276%20%3Flocation.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP17%20%3Fcountry.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP154%20%3Flogo_image.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP585%20%3Fpoint_in_time.%20%7D%0A%7D%0A%0A"
             referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+        <p style="text-align: center;">Interroger la base de données Wikidata pour récupérer des informations sur les
+            Jeux Olympiques d'été. la
+            visualisation
+            résultante est une représentation temporelle (en timeline) des Jeux Olympiques d'été, mettant en évidence
+            leur
+            emplacement, leur pays hôte, le logo associé et la chronologie des événements.</p>
     </div>
     <div>
         <h2 class="mt-5">De 1896 à Aujourd'hui : L'Évolution Visuelle Captivante des Logos des Jeux Olympiques</h2>
@@ -74,6 +80,11 @@
     </div>
     <div>
         <h2 class="mt-5">Carte des villes d’accueil des jeux olympiques d’été de 1896 à 2020</h2>
+        <br>
+        <p style="text-align: center;">Cette carte interactive présente les villes hôtes des Jeux Olympiques à travers
+            les années, mettant en
+            évidence des
+            informations clés pour chaque édition.</p>
         <div class="wrap">
             <iframe src="https://maifish.github.io/datavis2024/projet/Carte_des_villes_d_accueils_JO.html" width="1300"
                 height="1000" frameborder="0"></iframe>
@@ -163,7 +174,7 @@
     </div>
     <div>
         <h2 id="paris" class="mt-5">Jeux Olympiques de Paris 2024</h2>
-        <img src="logo-JO/2024-paris.png" alt="..." style="text-align:center;" width='150px' height='200px'>
+        <div style="text-align: center;"><img src="logo-JO/2024-paris.png" alt="..." width='150px' height='200px'></div>
         <h3 class=" mt-5">Calendrier des compétitions par jeux</h3>
         <iframe
             src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1qjWT7HG2KTsKZ_8b6_Ane50t4a5D8qPVNqx0dVkPr5E&font=Default&lang=en&initial_zoom=2&height=550'
