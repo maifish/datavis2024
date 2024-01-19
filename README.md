@@ -14,6 +14,8 @@ Répartition de tâches:
   - Mai TAKAGI (Master NET) - La Visualisation d’image: Quels sont les pays les plus médaillés de l’histoire des JO d’été?
   ⁠Qui est l’athlète le plus médaillé des jeux olympique? ; La création et la modification des fichiers (html, css);
 
-  - Dihya IBERSIENE (Master Transition Numérique) -
+  - Dihya IBERSIENE (Master Transition Numérique) - Collecte de données , choix du sujet et des questions d’analyses 
+  *3 visualisation : ⁠représentation temporelle en timeline; ⁠représente en noeud interactive des événements olympiques;
+  ⁠⁠La répartition des médailles par pays.
 
   
