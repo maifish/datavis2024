@@ -60,6 +60,12 @@
         <iframe style="margin: 100px; width: 80vw; height: 50vh; border: none;"
             src="https://query.wikidata.org/embed.html#%23defaultView%3AGraph%0ASELECT%20%3FSummer_Olympic_Games%20%3FSummer_Olympic_GamesLabel%20%3Flocation%20%3FlocationLabel%20%3Fcountry%20%3FcountryLabel%20%3Flogo_image%20%3Fpoint_in_time%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3FSummer_Olympic_Games%20wdt%3AP31%20wd%3AQ159821.%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP276%20%3Flocation.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP17%20%3Fcountry.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP154%20%3Flogo_image.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP585%20%3Fpoint_in_time.%20%7D%0A%7D%0A"
             referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+        <br>
+        <p style="text-align: center;">Cette représentation en nœuds permet une vue chronologique des Jeux Olympiques
+            d'été. Chaque nœud correspond à un
+            événement olympique estival et est associé à des détails tels que la localisation, le pays hôte, l'image du
+            logo, et la
+            date de l'événement.</p>
         <h2 class="mt-5">Les Jeux Olympiques à travers le temps: Timeline</h2>
         <iframe style="margin: 100px; width: 80vw; height: 50vh; border: none;"
             src="https://query.wikidata.org/embed.html#%23defaultView%3ATimeline%0ASELECT%20%3FSummer_Olympic_Games%20%3FSummer_Olympic_GamesLabel%20%3Flocation%20%3FlocationLabel%20%3Fcountry%20%3FcountryLabel%20%3Flogo_image%20%3Fpoint_in_time%20WHERE%20%7B%0A%20%20SERVICE%20wikibase%3Alabel%20%7B%20bd%3AserviceParam%20wikibase%3Alanguage%20%22%5BAUTO_LANGUAGE%5D%2Cen%22.%20%7D%0A%20%20%3FSummer_Olympic_Games%20wdt%3AP31%20wd%3AQ159821.%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP276%20%3Flocation.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP17%20%3Fcountry.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP154%20%3Flogo_image.%20%7D%0A%20%20OPTIONAL%20%7B%20%3FSummer_Olympic_Games%20wdt%3AP585%20%3Fpoint_in_time.%20%7D%0A%7D%0A%0A"
@@ -96,6 +102,10 @@
             <iframe width="850" height="1000" frameborder="0"
                 src="https://observablehq.com/embed/e1f3bc3aea3501bc?cells=chart"></iframe>
         </div>
+        <br>
+        <p style="text-align: center;">Ce diagramme interactif Sunburst réalisé avec Observable, qui présente les pays
+            et les villes organisant les Jeux
+            Olympiques chaque année, ainsi que le nombre d'athlètes correspondant.</p>
     </div>
     </div>
     <div>
@@ -179,6 +189,9 @@
     </div>
     <div>
         <h2 class="mt-5">Les pays participants et le nombre de médailles d'or aux Jeux olympiques de Tokyo en 2020</h2>
+        <p style="text-align: center;">Cette carte des tuiles de densité créée avec Plotly, mettant en avant les pays
+            participants et le nombre de médailles
+            d’or aux Jeux olympiques de Tokyo en 2020.</p>
         <div class="wrap">
             <iframe class="iframe" width="900" height="800" src="https://plotly.com/~JiaqiAI/3.embed" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -189,9 +202,13 @@
         <h2 id="paris" class="mt-5">Jeux Olympiques de Paris 2024</h2>
         <div style="text-align: center;"><img src="logo-JO/2024-paris.png" alt="..." width='150px' height='200px'></div>
         <h3 class=" mt-5">Calendrier des compétitions par jeux</h3>
-        <iframe
-            src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1qjWT7HG2KTsKZ_8b6_Ane50t4a5D8qPVNqx0dVkPr5E&font=Default&lang=en&initial_zoom=2&height=550'
-            width='100%' height='550' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+        <p style="text-align: center;">Le calendrier des compétitions des Jeux Olympiques de Paris 2024 fournit des
+            informations organisées sur toutes les
+            disciplines sportives.
+            <iframe
+                src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1qjWT7HG2KTsKZ_8b6_Ane50t4a5D8qPVNqx0dVkPr5E&font=Default&lang=en&initial_zoom=2&height=550'
+                width='100%' height='550' webkitallowfullscreen mozallowfullscreen allowfullscreen
+                frameborder='0'></iframe>
         <h3>Exploration Concrète de Données Textuelles : Une Approche Pratique sur l'Analyse d'un Corpus</h3>
         <div class="wrap">
             <iframe class="iframe" style='width: 471px; height: 346px;'
