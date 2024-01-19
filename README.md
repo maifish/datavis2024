@@ -11,4 +11,4 @@ Visualisation de couleurs : https://maifish.github.io/datavis2024/projet/Couleur
 
 Exercice 3 : https://maifish.github.io/datavis2024/projet/Exercice3_jeux_olympiques_brouillon.html
 
-Présentation: https://maifish.github.io/datavis2024/projet/JO/index.html
+Présentation finale: https://maifish.github.io/datavis2024/projet/JO/index.html
