@@ -10,3 +10,5 @@ Le nombre de compétitions par an : https://maifish.github.io/datavis2024/projet
 Visualisation de couleurs : https://maifish.github.io/datavis2024/projet/Couleur.html
 
 Exercice 3 : https://maifish.github.io/datavis2024/projet/Exercice3_jeux_olympiques_brouillon.html
+
+Présentation: https://maifish.github.io/datavis2024/projet/JO/index.html
