@@ -6,7 +6,9 @@ Répartition de tâches:
 
   - Jiaqi AI (Master Transition Numérique) - Réalisation d'un diagramme interactif Sunburst réalisé avec Observable, qui présente les pays et les villes organisant les Jeux Olympiques chaque année avec le nombre d'athlètes correspondant; réalisation d'une carte des tuiles de densité créée avec Plotly; réalisation d'un calendrier interactif des compétitions des Jeux Olympiques de Paris 2024 avec TimelineJS;
 
-  - Imad Hantouche (Master Transition Numérique) -
+  - Imad Hantouche (Master Transition Numérique) - Collecte, exploitation et analyse des données à travers les outils Looker     
+  Studio et Voyant Tools. Visualisations réalisées : Visualisation des pays et villes hôtes des JO à travers une carte interactive   et diagrammes de compétition incluant la répartition des médailles; ⁠Exploration Concrète de Données Textuelles: Une Approche 
+  Pratique sur l'Analyse d'un Corpus (Cirruss, Termes, Liens, Lecteur, Grappe de termes, Tendances et Contextes);
     
   - Khoi Nguyen NGUYEN (Master Transition Numérique) - Collecte des données images, réaliser la visualisation images "Evaluation 
   des logo";
